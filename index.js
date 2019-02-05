@@ -88,6 +88,10 @@ function creditCardType(cardNumber) {
   return results;
 }
 
+creditCardType.getCreditCardType = function (cardNumber) {
+  return clone(creditCardType(cardNumber));
+};
+
 creditCardType.getTypeInfo = function (type) {
   return clone(findType(type));
 };
